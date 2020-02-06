@@ -75,9 +75,7 @@ open class OTPView: UIView {
     
     /// For setting cursor color, if `requireCursor` is set to true.
     @IBInspectable
-    open lazy var cursorColor: UIColor = {
-        return self.cursorColor
-    }()
+    open var cursorColor: UIColor = .black
     
     /// Defines the size of OTP field.
     @IBInspectable
