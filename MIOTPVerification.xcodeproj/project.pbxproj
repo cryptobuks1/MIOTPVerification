@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		5A9DDCCA23EBD72500CABEEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DDCC923EBD72500CABEEC /* AppDelegate.swift */; };
-		5A9DDCCC23EBD72500CABEEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DDCCB23EBD72500CABEEC /* ViewController.swift */; };
-		5A9DDCCF23EBD72500CABEEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9DDCCD23EBD72500CABEEC /* Main.storyboard */; };
 		5A9DDCD123EBD72900CABEEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A9DDCD023EBD72900CABEEC /* Assets.xcassets */; };
 		5A9DDCD423EBD72900CABEEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9DDCD223EBD72900CABEEC /* LaunchScreen.storyboard */; };
+		5A9DDCDD23EBD76400CABEEC /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DDCDB23EBD76300CABEEC /* OTPView.swift */; };
+		5A9DDCDE23EBD76400CABEEC /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DDCDC23EBD76300CABEEC /* OTPTextField.swift */; };
+		5A9DDCE023EBD77000CABEEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DDCDF23EBD77000CABEEC /* ViewController.swift */; };
+		5A9DDCE223EBD77D00CABEEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9DDCE123EBD77C00CABEEC /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A9DDCC623EBD72500CABEEC /* MIOTPVerification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIOTPVerification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9DDCC923EBD72500CABEEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5A9DDCCB23EBD72500CABEEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5A9DDCCE23EBD72500CABEEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A9DDCD023EBD72900CABEEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A9DDCD323EBD72900CABEEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A9DDCD523EBD72900CABEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A9DDCDB23EBD76300CABEEC /* OTPView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		5A9DDCDC23EBD76300CABEEC /* OTPTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		5A9DDCDF23EBD77000CABEEC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A9DDCE123EBD77C00CABEEC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				5A9DDCC923EBD72500CABEEC /* AppDelegate.swift */,
-				5A9DDCCB23EBD72500CABEEC /* ViewController.swift */,
-				5A9DDCCD23EBD72500CABEEC /* Main.storyboard */,
+				5A9DDCDF23EBD77000CABEEC /* ViewController.swift */,
+				5A9DDCE123EBD77C00CABEEC /* Main.storyboard */,
+				5A9DDCDC23EBD76300CABEEC /* OTPTextField.swift */,
+				5A9DDCDB23EBD76300CABEEC /* OTPView.swift */,
 				5A9DDCD023EBD72900CABEEC /* Assets.xcassets */,
 				5A9DDCD223EBD72900CABEEC /* LaunchScreen.storyboard */,
 				5A9DDCD523EBD72900CABEEC /* Info.plist */,
@@ -122,9 +128,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A9DDCE223EBD77D00CABEEC /* Main.storyboard in Resources */,
 				5A9DDCD423EBD72900CABEEC /* LaunchScreen.storyboard in Resources */,
 				5A9DDCD123EBD72900CABEEC /* Assets.xcassets in Resources */,
-				5A9DDCCF23EBD72500CABEEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +141,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A9DDCCC23EBD72500CABEEC /* ViewController.swift in Sources */,
+				5A9DDCDE23EBD76400CABEEC /* OTPTextField.swift in Sources */,
 				5A9DDCCA23EBD72500CABEEC /* AppDelegate.swift in Sources */,
+				5A9DDCE023EBD77000CABEEC /* ViewController.swift in Sources */,
+				5A9DDCDD23EBD76400CABEEC /* OTPView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5A9DDCCD23EBD72500CABEEC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5A9DDCCE23EBD72500CABEEC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5A9DDCD223EBD72900CABEEC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
