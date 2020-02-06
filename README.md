@@ -1,6 +1,6 @@
 # OTPViewMaster
 
-A custom verification code view with inbuild validations, which can be used for OTP(One time password), verification codes.
+A custom verification code view with inbuild validations & Auto fill OTP on keyboard, which can be used for OTP(One time password), verification codes.
 
 ![video](/Media/OTPView.gif)
 
