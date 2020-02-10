@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MIOTPVerificationSPM",
+        "repositoryURL": "https://github.com/Mindinventory/MIOTPVerificationSPM.git",
+        "state": {
+          "branch": null,
+          "revision": "053ce3d2f88c8ce380b25ad1a40a90757d6c026e",
+          "version": "1.0.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

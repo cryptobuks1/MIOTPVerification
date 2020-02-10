@@ -3,17 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5A9DDCCA23EBD72500CABEEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DDCC923EBD72500CABEEC /* AppDelegate.swift */; };
 		5A9DDCD123EBD72900CABEEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A9DDCD023EBD72900CABEEC /* Assets.xcassets */; };
 		5A9DDCD423EBD72900CABEEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9DDCD223EBD72900CABEEC /* LaunchScreen.storyboard */; };
-		5A9DDCDD23EBD76400CABEEC /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DDCDB23EBD76300CABEEC /* OTPView.swift */; };
-		5A9DDCDE23EBD76400CABEEC /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DDCDC23EBD76300CABEEC /* OTPTextField.swift */; };
 		5A9DDCE023EBD77000CABEEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9DDCDF23EBD77000CABEEC /* ViewController.swift */; };
 		5A9DDCE223EBD77D00CABEEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9DDCE123EBD77C00CABEEC /* Main.storyboard */; };
+		5AD525FD23F12A10003326C7 /* MIOTPVerificationSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 5AD525FC23F12A10003326C7 /* MIOTPVerificationSPM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +21,6 @@
 		5A9DDCD023EBD72900CABEEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A9DDCD323EBD72900CABEEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A9DDCD523EBD72900CABEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A9DDCDB23EBD76300CABEEC /* OTPView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
-		5A9DDCDC23EBD76300CABEEC /* OTPTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
 		5A9DDCDF23EBD77000CABEEC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A9DDCE123EBD77C00CABEEC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,17 +30,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AD525FD23F12A10003326C7 /* MIOTPVerificationSPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A7B9EA723F1164700AC5E46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5A9DDCBD23EBD72500CABEEC = {
 			isa = PBXGroup;
 			children = (
 				5A9DDCC823EBD72500CABEEC /* MIOTPVerification */,
 				5A9DDCC723EBD72500CABEEC /* Products */,
+				5A7B9EA723F1164700AC5E46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,8 +67,6 @@
 				5A9DDCC923EBD72500CABEEC /* AppDelegate.swift */,
 				5A9DDCDF23EBD77000CABEEC /* ViewController.swift */,
 				5A9DDCE123EBD77C00CABEEC /* Main.storyboard */,
-				5A9DDCDC23EBD76300CABEEC /* OTPTextField.swift */,
-				5A9DDCDB23EBD76300CABEEC /* OTPView.swift */,
 				5A9DDCD023EBD72900CABEEC /* Assets.xcassets */,
 				5A9DDCD223EBD72900CABEEC /* LaunchScreen.storyboard */,
 				5A9DDCD523EBD72900CABEEC /* Info.plist */,
@@ -86,6 +90,9 @@
 			dependencies = (
 			);
 			name = MIOTPVerification;
+			packageProductDependencies = (
+				5AD525FC23F12A10003326C7 /* MIOTPVerificationSPM */,
+			);
 			productName = MIOTPVerification;
 			productReference = 5A9DDCC623EBD72500CABEEC /* MIOTPVerification.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +121,9 @@
 				Base,
 			);
 			mainGroup = 5A9DDCBD23EBD72500CABEEC;
+			packageReferences = (
+				5AD525FB23F12A10003326C7 /* XCRemoteSwiftPackageReference "MIOTPVerificationSPM" */,
+			);
 			productRefGroup = 5A9DDCC723EBD72500CABEEC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,10 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A9DDCDE23EBD76400CABEEC /* OTPTextField.swift in Sources */,
 				5A9DDCCA23EBD72500CABEEC /* AppDelegate.swift in Sources */,
 				5A9DDCE023EBD77000CABEEC /* ViewController.swift in Sources */,
-				5A9DDCDD23EBD76400CABEEC /* OTPView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +342,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5AD525FB23F12A10003326C7 /* XCRemoteSwiftPackageReference "MIOTPVerificationSPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mindinventory/MIOTPVerificationSPM.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5AD525FC23F12A10003326C7 /* MIOTPVerificationSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5AD525FB23F12A10003326C7 /* XCRemoteSwiftPackageReference "MIOTPVerificationSPM" */;
+			productName = MIOTPVerificationSPM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5A9DDCBE23EBD72500CABEEC /* Project object */;
 }

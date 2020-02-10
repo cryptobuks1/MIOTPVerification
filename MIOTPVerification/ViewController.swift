@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MIOTPVerificationSPM
 
 class ViewController: UIViewController {
     
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
         viewOTP.delegate = self
         viewOTP.cursorColor = .red
         viewOTP.otpFieldDisplayType = .box
+        viewOTP.txtPlaceholder = .none
         viewOTP.initializeOTPUI()
         
         viewOTP1.fieldsCount = 4
