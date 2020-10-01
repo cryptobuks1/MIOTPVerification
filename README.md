@@ -1,6 +1,6 @@
 # OTPViewMaster
 
-A custom verification code view with inbuild validations & Auto fill OTP on keyboard, which can be used for OTP(One time password), verification codes. You can find the OTPView Swift Package Manager(SPM) from https://github.com/Mindinventory/MIOTPVerificationSPM .
+A custom verification code view with inbuild validations & Auto fill OTP on keyboard, which can be used for OTP(One time password), verification codes. You can find the OTPView Swift Package Manager(SPM) from [MIOTPVerificationSPM](https://github.com/Mindinventory/MIOTPVerificationSPM)
 
 ![video](/Media/OTPView.gif)
 
